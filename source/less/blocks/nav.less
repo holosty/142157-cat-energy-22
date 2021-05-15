@@ -1,0 +1,32 @@
+.nav {
+  position: relative;
+  padding-top: 12px;
+  padding-bottom: 16px;
+}
+
+.nav__btn {
+  position: absolute;
+  padding: 0;
+  background-color: @color-white;
+  border: none;
+}
+
+.nav--close .nav__btn {
+  top: 25px;
+  right: 0;
+  width: 24px;
+  height: 16px;
+  background-image: url("../img/open.svg");
+  background-repeat: no-repeat;
+  background-size: 24px 16px;
+}
+
+.nav--open .nav__btn {
+  top: 23px;
+  right: 3px;
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/close.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+}

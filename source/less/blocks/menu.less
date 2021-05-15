@@ -1,0 +1,28 @@
+.menu {
+  .list();
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.menu__item {
+  margin-right: -20px;
+  margin-left: -20px;
+  padding-top: 22px;
+  padding-bottom: 23px;
+  border-top: 1px solid @color-border-menu;
+}
+
+.menu__item:nth-last-child(1) {
+  border-bottom: 1px solid @color-border-menu;
+}
+
+.menu__link {
+  display: inline-block;
+  font-weight: 500;
+  color: @color-black;
+  text-transform: uppercase;
+}
