@@ -19,7 +19,11 @@
         <nav class="nav nav--close">
           <button class="nav__btn" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <a class="logo" href="index.html">
-            <img class="logo__img" src="img/logo-mobile.svg" width="34" height="38" alt="Логотип с котом.">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" sizes="202px">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" sizes="174px">
+              <img class="logo__img" src="img/logo-mobile.svg" width="34" height="38" alt="Логотип с котом.">
+            </picture>
             <img class="logo__text" src="img/footer-logo.svg" width="101" height="18" alt="Логотип с текстом Cat Energy.">
           </a>
           <ul class="nav__list menu">

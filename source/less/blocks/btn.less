@@ -1,0 +1,22 @@
+.btn {
+  display: block;
+  .font-normal();
+  font-size: 14px;
+  line-height: 18px;
+  color: @color-white;
+  background-color: @color-basic-green;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: @color-basic-green-hover;
+  }
+
+  &:active {
+    background-color: @color-basic-green-hover;
+    color: fadeout(@color-white, 70);
+  }
+}
