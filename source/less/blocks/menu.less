@@ -53,12 +53,6 @@
     font-weight: 400;
   }
 
-  @media (min-width: @desktop) {
-    font-size: 20px;
-    line-height: 30px;
-    color: @color-white;
-  }
-
   &:hover,
   &:focus {
     opacity: 0.6;
@@ -72,7 +66,17 @@
     @media (min-width: @tablet) {
       border-bottom: 2px solid @color-basic-green;
     }
+  }
 
+  &--index {
+    @media (min-width: @desktop) {
+      font-size: 20px;
+      line-height: 30px;
+      color: @color-white;
+    }
+  }
+
+  &--index-current {
     @media (min-width: @desktop) {
       border-bottom: 2px solid @color-white;
     }
