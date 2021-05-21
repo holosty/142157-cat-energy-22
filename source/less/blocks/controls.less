@@ -12,6 +12,15 @@
   border: 1px solid @color-result-border;
   border-radius: 6px;
   box-sizing: border-box;
+
+  @media (min-width: @tablet) {
+    position: relative;
+    padding: 0;
+    width: 428px;
+    height: 6px;
+    background-color: @color-result-border;
+    border: none;
+  }
 }
 
 .controls__slider {
@@ -19,6 +28,37 @@
   height: 100%;
   background-color: @color-basic-green;
   border-radius: 6px;
+
+  @media (min-width: @tablet) {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 33px;
+    height: 33px;
+    border: 12px solid @color-white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px @color-result-border, 1px 2px 3px fadeout(@color-black, 84);
+    box-sizing: border-box;
+    cursor: grab;
+  }
+
+  &:hover,
+  &:focus {
+    @media (min-width: @tablet) {
+      box-shadow: 0 0 0 1px @color-result-border, 1px 3px 4px fadeout(@color-black, 89);
+      cursor: grab;
+    }
+  }
+
+  &:active {
+    @media (min-width: @tablet) {
+      box-shadow: 0 0 0 1px @color-basic-green, 1px 4px 5px fadeout(@color-black, 80);
+      cursor: grabbing;
+    }
+  }
 }
 
 .controls__btn {
@@ -29,4 +69,26 @@
   background-color: transparent;
   text-transform: uppercase;
   border: none;
+
+  @media (min-width: @tablet) {
+    margin: 0 14px;
+    padding: 4px 0;
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 1px dotted fadeout(@color-black, 76);
+  }
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    @media (min-width: @tablet) {
+      border-bottom: 1px solid fadeout(@color-black, 60);
+    }
+  }
+
+  &:active {
+    @media (min-width: @tablet) {
+      border-bottom: 1px solid transparent;
+    }
+  }
 }
