@@ -8,4 +8,22 @@
   @media (min-resolution: 2dppx) {
     background-image: url("../img/location-mobile@2x.jpg");
   }
+
+  @media (min-width: @tablet) {
+    min-height: 400px;
+    background-image: url("../img/location-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/location-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: @desktop) {
+    min-height: 400px;
+    background-image: url("../img/location-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/location-desktop@2x.jpg");
+    }
+  }
 }

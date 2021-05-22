@@ -60,3 +60,15 @@
     display: flex;
   }
 }
+
+.nav--no-js .nav__list {
+  @media (max-width: @mobile-only) {
+    display: block;
+  }
+}
+
+.nav--no-js .nav__btn {
+  @media (max-width: @mobile-only) {
+    display: none;
+  }
+}

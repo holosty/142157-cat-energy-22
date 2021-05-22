@@ -1,0 +1,21 @@
+.dev__link {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  color: @color-special-dark-grey;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.dev__icon {
+  fill: @color-grey-footer;
+}
+
+.dev__link:hover .dev__icon,
+.dev__link:focus .dev__icon {
+  fill: @color-basic-green;
+}
