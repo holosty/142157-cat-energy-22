@@ -1,0 +1,28 @@
+.product-table {
+  width: 100%;
+  font-size: 12px;
+  line-height: 16px;
+  color: @color-special-dark-grey;
+  border-collapse: collapse;
+  border-spacing: unset;
+  border: none;
+
+  @media (min-width: @tablet) {
+    font-size: 16px;
+  }
+}
+
+.product-table__row {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @tablet) {
+    padding-top: 5px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid @color-result-border;
+  }
+}
+
+.product-table__title {
+  font-weight: 400;
+}

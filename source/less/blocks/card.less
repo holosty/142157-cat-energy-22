@@ -1,0 +1,140 @@
+.card {
+  @media (min-width: @tablet) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.card__wrapper {
+  display: flex;
+  margin-bottom: 13px;
+  padding-top: 11px;
+
+  @media (min-width: @tablet) {
+    flex-direction: column;
+    margin-bottom: 33px;
+  }
+}
+
+.card__link {
+  display: block;
+  min-width: 140px;
+  min-height: 112px;
+  object-fit: contain;
+
+  @media (min-width: @tablet) {
+    align-self: center;
+    margin-bottom: 14px;
+    width: 168px;
+    height: 200px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 172px;
+    height: 196px;
+  }
+}
+
+.card__inner {
+  flex-grow: 1;
+}
+
+.card__link-title {
+  display: block;
+  max-width: 76px;
+
+  @media (min-width: @tablet) {
+    margin: 0 auto;
+    max-width: 130px;
+  }
+}
+
+.card__title {
+  margin-top: 0;
+  margin-bottom: 18px;
+  .font-normal();
+  font-size: 16px;
+  line-height: 20px;
+  color: @color-special-black;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 21px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  &--yet {
+    margin-bottom: 8px;
+
+    @media (min-width: @tablet) {
+      margin: 0 auto;
+      margin-bottom: 23px;
+      width: 134px;
+    }
+  }
+}
+
+.card__btn {
+  margin-bottom: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 40px;
+  }
+
+  &--yet {
+    color: @color-special-dark-grey;
+    background-color: @color-grey;
+
+    &:hover,
+    &:focus {
+      background-color: @color-grey-border;
+    }
+
+    &:active {
+      color: fadeout(@color-special-dark-grey, 70);
+    }
+  }
+}
+
+.card__icon-plus {
+  margin-bottom: 23px;
+  width: 23px;
+  height: 23px;
+
+  @media (min-width: @tablet) {
+    padding-top: 27px;
+    margin: 0 auto;
+    margin-bottom: 49px;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.card__icon-plus line {
+  @media (min-width: @tablet) {
+    stroke-width: 1px;
+  }
+}
+
+.card__text {
+  margin-top: 0;
+  margin-bottom: 21px;
+  font-size: 12px;
+  line-height: 16px;
+  color: @color-special-dark-grey;
+
+  @media (min-width: @tablet) {
+    margin: 0 auto;
+    margin-bottom: 87px;
+    width: 167px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
