@@ -20,10 +20,36 @@
 
     @media (min-width: @tablet) {
       margin-bottom: 83px;
+      padding-top: 62px;
+    }
+
+    @media (min-width: @desktop) {
+      padding-top: 74px;
     }
   }
 
   &--form {
     margin-bottom: 37px;
+
+    @media (min-width: @tablet) {
+      margin-bottom: 54px;
+    }
+
+    @media (min-width: @desktop) {
+      padding-top: 56px;
+    }
+  }
+}
+
+.page-main__text {
+  margin-top: 0;
+  margin-bottom: 39px;
+  .font-normal();
+  text-transform: uppercase;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 66px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
