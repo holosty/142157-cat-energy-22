@@ -22,10 +22,14 @@
   }
 
   &--checkbox {
-    padding-bottom: 40px;
+    padding-bottom: 39px;
 
     @media (min-width: @tablet) {
-      padding-bottom: 60px;
+      padding-bottom: 59px;
+    }
+
+    @media (min-width: @desktop) {
+      padding-bottom: 66px;
     }
   }
 
@@ -42,7 +46,7 @@
   .list();
 
   &--text-group {
-    margin-bottom: 24px;
+    margin-bottom: 25px;
 
     @media (min-width: @tablet) {
       margin-bottom: 72px;
@@ -66,6 +70,7 @@
     @media (min-width: @tablet) {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      column-gap: 60px;
       row-gap: 42px;
     }
 
@@ -87,7 +92,7 @@
 .form__item {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
 
   @media (min-width: @tablet) {
     margin-bottom: 20px;
@@ -98,7 +103,13 @@
   }
 
   &--radio {
-    margin-bottom: 23px;
+    margin-bottom: 25px;
+  }
+
+  &--radio:nth-child(2) {
+    @media (min-width: @desktop) {
+      margin-bottom: 23px;
+    }
   }
 
   &--email {
@@ -125,6 +136,10 @@
 .form__label {
   margin-right: 13px;
   cursor: pointer;
+
+  @media (min-width: @tablet) {
+    margin-right: 18px;
+  }
 
   &--radio {
     position: relative;
@@ -165,7 +180,7 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet) {
-    padding: 9px 18px 10px;
+    padding: 12px 18px 14px;
   }
 
   @media (min-width: @desktop) {
@@ -197,8 +212,8 @@
 
 .form__inner {
   &--checkbox-group {
-    padding-top: 22px;
-    padding-bottom: 19px;
+    padding-top: 28px;
+    padding-bottom: 24px;
     border-top: 1px solid @color-lighten-grey;
     border-bottom: 1px solid @color-lighten-grey;
 
@@ -212,11 +227,23 @@
 .form__input-email {
   margin-left: 11px;
   padding-right: 35px;
+
+  @media (min-width: @tablet) {
+    margin-left: 20px;
+    padding-top: 14px;
+    padding-left: 19px;
+  }
 }
 
 .form__input-tel {
   margin-left: 8px;
   padding-right: 33px;
+
+  @media (min-width: @tablet) {
+    margin-left: 14px;
+    padding-top: 14px;
+    padding-left: 19px;
+  }
 }
 
 .form__input-radio + .form__label--radio::before {
@@ -310,6 +337,10 @@
     margin-left: 22px;
     height: 2px;
     background-color: @color-basic-green;
+
+    @media (min-width: @tablet) {
+      margin-left: 40px;
+    }
   }
 
   &--contact {
@@ -323,6 +354,7 @@
 
     @media (min-width: @desktop) {
       padding-top: 69px;
+      margin-bottom: 71px;
     }
   }
 
@@ -336,23 +368,23 @@
     }
 
     @media (min-width: @desktop) {
-      padding-top: 69px;
+      padding-top: 65px;
       margin-bottom: 76px;
     }
   }
 
   &--extra {
     padding-top: 23px;
-    margin-bottom: 34px;
+    margin-bottom: 37px;
 
     @media (min-width: @tablet) {
-      padding-top: 65px;
-      margin-bottom: 57px;
+      padding-top: 59px;
+      margin-bottom: 61px;
     }
 
     @media (min-width: @desktop) {
-      padding-top: 67px;
-      margin-bottom: 57px;
+      padding-top: 62px;
+      margin-bottom: 61px;
     }
   }
 }
@@ -373,10 +405,8 @@
   width: 20px;
   height: 21px;
 
-  @media (min-width: @tablet) {
+  @media (min-width: @desktop) {
     right: 17px;
-    width: 20px;
-    height: 20px;
   }
 }
 
@@ -386,9 +416,11 @@
   height: 15px;
 
   @media (min-width: @tablet) {
-    right: 19px;
-    width: 18px;
-    height: 13px;
+    right: 14px;
+  }
+
+  @media (min-width: @desktop) {
+    right: 18px;
   }
 }
 
@@ -518,14 +550,16 @@
 }
 
 .form__btn {
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-bottom: 21px;
   width: 100%;
+  font-size: 16px;
+  line-height: 20px;
 
   @media (min-width: @tablet) {
     margin-bottom: 0;
-    margin-right: 61px;
+    margin-right: 62px;
     padding-top: 13px;
     padding-bottom: 13px;
     width: 282px;
@@ -534,7 +568,7 @@
   }
 
   @media (min-width: @desktop) {
-    margin-right: 80px;
+    margin-right: 82px;
     width: 568px;
   }
 }
