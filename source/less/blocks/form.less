@@ -424,30 +424,27 @@
   }
 }
 
-.form__input-email:invalid + .form__icon-email line,
-.form__input-email:invalid + .form__icon-email path {
-  stroke: @color-invalid;
-}
-
-.form__input-tel:invalid + .form__icon-tel path {
+.form__input-email:invalid + .form__icon-email{
   fill: @color-invalid;
 }
 
-.form__input-email:hover + .form__icon-email line,
-.form__input-email:hover + .form__icon-email path {
-  stroke: @color-special-black;
+.form__input-tel:invalid + .form__icon-tel {
+  fill: @color-invalid;
 }
 
-.form__input-email:focus + .form__icon-email line,
-.form__input-email:focus + .form__icon-email path {
-  stroke: @color-basic-green;
-}
-
-.form__input-tel:hover + .form__icon-tel path {
+.form__input-email:hover + .form__icon-email {
   fill: @color-special-black;
 }
 
-.form__input-tel:focus + .form__icon-tel path {
+.form__input-email:focus + .form__icon-email {
+  fill: @color-basic-green;
+}
+
+.form__input-tel:hover + .form__icon-tel {
+  fill: @color-special-black;
+}
+
+.form__input-tel:focus + .form__icon-tel {
   fill: @color-basic-green;
 }
 
